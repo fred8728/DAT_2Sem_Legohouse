@@ -39,11 +39,11 @@ public class DataAccessor {
         statement.executeUpdate(query);
     }
     
-    public static void createOrder(String height, String length, String width) throws LegoException, SQLException {
+    public static void createOrder(String heigth, String length, String width) throws LegoException, SQLException {
         Connection conn = connector.getConnection();
             Statement statement = conn.createStatement();
-        String query = "INSERT INTO ORDERDETAILS (HEIGHT, LENGTH, WIDTH) VALUES ('"
-                + height + "','" + length + "','" + width + "');";
+        String query = "INSERT INTO ORDERDETAILS (HEIGTH, LENGTH, WIDTH) VALUES ('"
+                + heigth + "','" + length + "','" + width + "');";
             statement.executeUpdate(query);
     }
     

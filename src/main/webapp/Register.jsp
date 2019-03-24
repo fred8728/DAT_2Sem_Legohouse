@@ -18,11 +18,15 @@
         <form action="FrontController?action=newUser" method="POST">
             <h1>Register here</h1>
             <hr>
-                Email:<br>
-                <input type="text" name="email" value=><br>
-                Password:<br>
-                <input type=password name=password value=></p>
+            Email:<br>
+            <input type="text" name="email" value=><br>
+            Password:<br>
+            <input type=password name=password value=></p>
             <input type="submit" value="Submit">
-            </form>
-            </body>
-            </html>
+        </form>
+        <div class="test2">
+            <br><br>
+            <a type="button" class="btn btn-primary test" href ="Main.jsp">Return to main page</a>
+        </div>
+    </body>
+</html>

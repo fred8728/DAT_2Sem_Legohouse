@@ -16,6 +16,7 @@
     <body>
         <h1>Create your order here</h1><br><br>
         <form action="FrontController?action=showOrder" method="POST">
+            <input type="hidden" name="action" value="order">
             <table class="table table-striped">
                 <thead><tr><th>Heigth</th><th>Length</th><th>Width</th><th>Select</th><th></th></tr></thead>
                 <tbody> 
@@ -27,5 +28,9 @@
 
             </table>
         </form>
+        <div class="test2">
+            <br><br>
+            <a type="button" class="btn btn-primary test" href ="Main.jsp">Return to main page</a>
+        </div>
     </body>
 </html>

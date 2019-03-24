@@ -14,14 +14,13 @@
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <form method="GET">
+        <form action="FrontController?action=logged-in" method=\"POST\">
             <h1>You can log in here</h1>
             Email:<br>
-            <input type=text name=username value=><br>
+            <input type="text" name="email" value=><br>
             Password:<br>
-            <input type=password name=password value=>
+            <input type=password name=password value=><br>
             <input type=hidden name=action value=logged-in>
-            <br>
             <input type=submit value=Login User>
             <br>
         </form>

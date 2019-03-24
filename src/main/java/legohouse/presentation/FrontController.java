@@ -19,9 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import legohouse.data.DataAccessor;
-import legohouse.function.House;
 import legohouse.function.LegoException;
-import legohouse.function.ShoppingCart;
 
 /**
  *
@@ -62,7 +60,6 @@ public class FrontController extends HttpServlet {
             }
         } else {
             switch (action) {
-
                 case "newUser":
                     newUser(request, response);
                     break;
@@ -78,14 +75,6 @@ public class FrontController extends HttpServlet {
                 case "logged-in":
                     login(request, response);
                     break;
-                case "order":
-                    if (loggedIn == false) {
-                        main(request, response);
-                    } else {
-                        order(request, response);
-                    }
-                case "showOrder":
-                    ShowOrder.generateOrder(request, response);
                 case "logOut":
                     session.setAttribute("loggedIn", false);
                     main(request, response);
@@ -94,6 +83,15 @@ public class FrontController extends HttpServlet {
                     session.setAttribute("loggedIn", true);
                     main(request, response);
                     break;
+                case "order":
+                    if(loggedIn == true){
+                    order(request, response);
+                } else{ 
+                        main(request, response);
+                        }
+                    break;
+                case "showOrder":
+                    ShowOrder.generateOrder(request, response);
             }
         }
         response.setContentType("text/html;charset=UTF-8");

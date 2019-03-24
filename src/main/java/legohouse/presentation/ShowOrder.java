@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import legohouse.data.DataAccessor;
 import legohouse.function.LegoException;
-import legohouse.function.ShoppingCart;
 
 /**
  *
@@ -54,7 +53,10 @@ public class ShowOrder {
                     + "</form></td></tr>\n"
                     + "                        </tbody>\n"
                     + "                    </table>");
-            out.println("<p><a href=\"Main.jsp\">Return to main page</a></p>");
+            out.println("<div class=\"test2\">");
+            out.println("<br><br>");
+            out.println("<p><a type=\"button\" class=\"btn btn-primary test\" href=\"Main.jsp\">Return to main page</a></p>");
+            out.println("</div>");
             out.println("</body>");
             out.println("</html>");
         }

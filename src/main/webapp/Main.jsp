@@ -14,17 +14,17 @@
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <form2 name="logOut.jsp" action="FrontController" method="POST">
-        <input type=hidden name=action value=logOut.jsp>
-        <input type=submit value=logout >
+        <form2>
+        <input type=hidden name=action value=logOut>
+        <input type=submit value=Logout >
         </form2>
         
         <h1 class=""><b>LegoHouse</b></h1>
         <br>
         <div class="test">
-        <a type="button" class="btn btn-primary test " href =Register.jsp> Register </a>
-        <a type="button" class="btn btn-primary test" href ="LoggedIn.jsp"> Log in here </a>
-        <a type="button" class="btn btn-primary test" href ="Order.jsp"> Create order </a>
+        <a type="button" class="btn btn-primary test " href =\Legohouse/FrontController?action=register> Register </a>
+        <a type="button" class="btn btn-primary test" href =\Legohouse/FrontController?action=login> Log in here </a>
+        <a type="button" class="btn btn-primary test" href =\Legohouse/FrontController?action=order> Create order </a>
         </div>
         
         
